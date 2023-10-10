@@ -1,3 +1,3 @@
 # Accordion
 
-Простая и легкая JavaScript-библиотека для аккордиона
+A simple and lightweight JavaScript library for accordion
