@@ -1,0 +1,31 @@
+{
+  "name": "kanechi accordion",
+  "description": "Simple JS Library for accordion",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VahanHovanisyan/accordion-plugin.git"
+  },
+  "author": "Vahan Hovanisian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VahanHovanisyan/accordion-plugin.git/issues"
+  },
+  "homepage": "https://github.com/VahanHovanisyan/accordion-plugin.git",
+  "keywords": [
+    "kanechi",
+    "accordion",
+    "spoiler"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.58.3",
+    "vite": "^4.1.0"
+  }
+}
