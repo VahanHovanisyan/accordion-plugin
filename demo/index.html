@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../dist/accordion.min.css">
   <title>accordion</title>
-  <script type="module" crossorigin src="/assets/index-0c66c8b8.js"></script>
-  <link rel="stylesheet" href="/assets/index-f28910d6.css">
 </head>
 
 <body>
@@ -72,7 +71,14 @@
       </div>
     </section>
   </main>
-  
+  <script src="../dist/accordion.min.js"></script>
+  <script>
+    const accordion1 = new Accordion('accordion1', {
+      speed: 3000,
+      turn: true,
+    });
+    const accordion2 = new Accordion('accordion2')
+  </script>
 </body>
 
 </html>
