@@ -16,11 +16,11 @@ A simple and lightweight JavaScript library for accordion
 3. Place the following markup in your HTML document:
 ```html
 <ul class="accordion" data-acordion="accordion">
-	<li class="accordion__item">
+  <li class="accordion__item">
     <button class="accordion__button">button</button>
     <div class="accordion__collapse">
       <div class="accordion__content">
-        <div>
+        <div class="accordion__body">
           Lorem ipsum dolor sit amet
         </div>
       </div>
@@ -30,7 +30,7 @@ A simple and lightweight JavaScript library for accordion
     <button class="accordion__button">button</button>
     <div class="accordion__collapse">
       <div class="accordion__content">
-        <div>
+        <div class="accordion__body">
           Lorem ipsum dolor sit amet
         </div>
       </div>
@@ -40,7 +40,7 @@ A simple and lightweight JavaScript library for accordion
     <button class="accordion__button">button</button>
     <div class="accordion__collapse">
       <div class="accordion__content">
-        <div>
+        <div class="accordion__body">
           Lorem ipsum dolor sit amet
         </div>
       </div>
@@ -67,6 +67,7 @@ You can create positioning styles only for the child element accordion__content,
       </div>
     </div>
   </li>
+</ul>  
 ```
 
 `data-accordion` - an important data attribute through which all interaction with the plugin works. The value of this attribute must be unique to the page.
