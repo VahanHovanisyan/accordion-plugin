@@ -1,7 +1,7 @@
 {
   "name": "kanechi-accordion",
   "description": "Simple JS Library for accordion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/accordion.js",
   "repository": {
     "type": "git",
