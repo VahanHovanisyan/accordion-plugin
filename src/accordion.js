@@ -1,9 +1,9 @@
 export default class Accordion {
   constructor(accordionElem, options) {
-    
+
     let defaultOptions = {
       speed: 300,
-      turn : false
+      turn: false
     }
     this.accordion = document.querySelector(`[data-accordion="${accordionElem}"]`);
     this.options = Object.assign(defaultOptions, options);
@@ -30,9 +30,16 @@ export default class Accordion {
   updateCollapseStyles(collapseElement) {
     const isOpen = collapseElement.classList.contains('accordion__collapse_open');
     collapseElement.style.cssText = `
-      transition-duration: ${this.options.speed + 'ms'};
+      -webkit-transition-duration: ${this.options.speed + 'ms'};
+      -o-transition-duration: ${this.options.speed + 'ms'};
+        transition-duration: ${this.options.speed + 'ms'};
+      -webkit-transition-property: grid-template-rows;
+      -o-transition-property: grid-template-rows;
       transition-property: grid-template-rows;
+      transition-property: grid-template-rows, -ms-grid-rows;
+      display: -ms-grid;
       display: grid;
+      -ms-grid-rows: ${isOpen ? '1fr' : '0fr'};
       grid-template-rows: ${isOpen ? '1fr' : '0fr'};
     `;
 
